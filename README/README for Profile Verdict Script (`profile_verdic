@@ -1,0 +1,48 @@
+Certainly! Based on our discussion and the functionalities of the `profile_verdict.py` script, here's a complete README file:
+
+---
+
+### README for Profile Verdict Script
+
+#### Overview
+The `profile_verdict.py` script is designed to facilitate the review process of profiles contained in a CSV file. This tool is particularly useful for quickly and efficiently evaluating and annotating a large number of profiles, ideal for tasks like filtering potential leads or contacts.
+
+#### Key Features
+- **Automated File Selection:** Automatically selects the most recently modified CSV file in the current directory for review.
+- **Progress Tracking:** Displays the review progress, showing how many profiles have been reviewed out of the total.
+- **Interactive Review Process:** Allows users to input their verdict ('Y' or 'N') for each profile, along with options to save progress or exit the review session.
+- **Data Preservation:** Offers the option to save the current progress or exit without saving.
+- **Automatic Saving Upon Completion:** Automatically saves the data when all profiles have been reviewed.
+
+#### How It Works
+1. **Finding the Latest File:** 
+   - The script starts by finding the latest CSV file in the current directory, assuming the naming pattern 'merged_data_*.csv'.
+
+2. **Reviewing Profiles:**
+   - Profiles are presented one by one to the user.
+   - Each profile displays key information such as name, location, new role, company tagline, serial founder status, past positions, and education.
+
+3. **Inputting Verdict:**
+   - For each profile, the user inputs a verdict ('Y' or 'N').
+   - The user can also input 'SAVE' to save the current progress and exit, or 'EXIT' to exit without saving.
+
+4. **Progress Display:**
+   - After each verdict, the script updates and displays the review progress.
+
+5. **Completion and Auto-Save:**
+   - Upon reviewing all profiles, the script automatically saves the data and notifies the user that the review process is complete.
+
+#### Running the Script
+- Run the script using a Python interpreter.
+- No additional arguments or user input are required to start the review process.
+- Ensure that there is at least one 'merged_data_*.csv' file in the directory where the script is run.
+
+#### Future Development
+Future updates to the script could include:
+- Enhanced filtering options to review specific subsets of profiles.
+- Integration with databases or online sources for real-time data retrieval and updating.
+- Customizable review categories and verdict options.
+
+---
+
+This README should provide a comprehensive guide for users and developers working with the `profile_verdict.py` script, detailing its functionalities and usage.

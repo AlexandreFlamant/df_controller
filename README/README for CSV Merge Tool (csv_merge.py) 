@@ -1,0 +1,33 @@
+Certainly! Here's the updated README for the modified `csv_merge.py` script, including the addition of the 'Verdict' column:
+
+---
+
+### README for CSV Merge Tool (`csv_merge.py`)
+
+#### Purpose
+The `csv_merge.py` script is designed to merge multiple CSV and Excel files into a single CSV file. It is ideal for consolidating data from various sources with identical column structures into a unified format. The script now also adds a 'Verdict' column to accommodate subsequent processing steps.
+
+#### How It Works
+
+##### Process Overview
+- The script scans a specified folder (`CSV_files`) for all CSV and Excel files.
+- It merges these files into a single DataFrame, assuming they all share the same column structure.
+- A new 'Verdict' column is added to the merged DataFrame to facilitate further data processing, particularly for scripts that require this column.
+- The merged data, along with the new 'Verdict' column, is saved into a new CSV file, named with the current date.
+
+##### Running the Script
+- Run the script using a Python interpreter. No additional arguments are needed.
+- Ensure the `CSV_files` folder exists in the same directory as the script and contains the files to be merged.
+- The script outputs a merged CSV file in the script's directory, complete with a summary of the merging process.
+
+##### Output
+- The output file is named `merged_data_<current_date>.csv`.
+- It contains all data from the merged CSV and Excel files, along with an empty 'Verdict' column.
+- The script also outputs the total number of CSV and Excel files merged and the total number of rows in the final merged document.
+
+#### Notes for Future Development
+- Future enhancements could include adding support for merging files with slightly different column structures, improving error handling, and implementing a user interface for selecting specific files or specifying merge criteria.
+
+---
+
+This README reflects the script's updated functionality, providing clear guidance on its capabilities, output, and the addition of the 'Verdict' column. It helps users understand the operational flow and the purpose of modifications made to the script.

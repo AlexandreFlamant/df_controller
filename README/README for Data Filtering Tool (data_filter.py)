@@ -1,0 +1,38 @@
+Sure, here's the updated README for the `data_filter.py` script, reflecting the change to overwrite the original merged file:
+
+---
+
+### README for Data Filtering Tool (`data_filter.py`)
+
+#### Purpose
+The `data_filter.py` script is designed to process a merged CSV file by applying specific filters and exclusion criteria. It's tailored for data cleaning and preparation, making it a valuable tool for refining large datasets.
+
+#### How It Works
+
+##### Process Overview
+- The script automatically finds the latest merged CSV file in the current directory, created by `csv_merge.py`.
+- It performs data cleaning operations including:
+    - Removing duplicate rows.
+    - Filtering rows based on predefined conditions (e.g., Region and Signal Type).
+    - Excluding rows that contain any keywords from an exclusion list defined in `keywords.csv`.
+- Instead of creating a new file, the script now overwrites the original merged file with the filtered data, thereby reducing file redundancy.
+
+##### Running the Script
+- Run the script using a Python interpreter. The script automatically selects the most recent merged CSV file for processing.
+- Ensure `keywords.csv` is present in the same directory, containing the "Exclude Tag" column for exclusion criteria.
+- The script overwrites the original merged file with the filtered data.
+
+##### Output
+- The output is the same merged CSV file, now containing the filtered data.
+- The script provides a detailed summary of the filtering process, including:
+    - The number of initial rows.
+    - The number of duplicates removed.
+    - The number of rows removed by filtering and exclusion criteria.
+    - The final number of rows in the processed file.
+
+#### Notes for Future Development
+- Future updates could include dynamic filtering criteria, integration with databases for real-time data updates, and enhanced error handling for various data formats.
+
+---
+
+This README reflects the script's updated functionality, offering clear guidance on usage and the output. It helps users understand the script's operation and how it integrates with the `csv_merge.py` script.
